@@ -1,0 +1,34 @@
+{
+  "name": "react-native-pin",
+  "version": "1.0.0",
+  "description": "React Native Full Pin is a component To use Pin In your apps, that you can ass your styles and get values and use functios to mutate it.",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariovarela99/react-native-pin.git"
+  },
+  "keywords": [
+    "React Native",
+    "Pin",
+    "React Native Pin",
+    "React Native Full Pin",
+    "React",
+    "Pin React",
+    "React Pin",
+    "Pin React Native"
+  ],
+  "author": "mariovarela99",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariovarela99/react-native-pin/issues"
+  },
+  "homepage": "https://github.com/mariovarela99/react-native-pin#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.69.0",
+    "styled-components": "^5.3.5"
+  }
+}
