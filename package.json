@@ -1,7 +1,7 @@
 {
-  "name": "react-native-pin",
+  "name": "react-native-full-pin",
   "version": "1.0.0",
-  "description": "React Native Full Pin is a component To use Pin In your apps, that you can ass your styles and get values and use functios to mutate it.",
+  "description": "React Native Full Pin is a component To use Pin In your apps, with buttons, input, functions all in the same place.",
   "main": "index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
