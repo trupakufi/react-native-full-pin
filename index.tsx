@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { View } from "react-native";
 import { Buttons } from "./data/buttons";
 import { ButtonsType } from "./data/types";
@@ -13,7 +13,7 @@ import {
 import { FullPinProps } from "./types/props";
 
 const FullPin: React.FC<FullPinProps> = ({ pin, styles }) => {
-  const [code, setCode] = useState([] as number[]);
+  const { code, onChange } = pin;
 
   const InputWithValueStyles = {
     backgroundColor: styles?.input?.backgroundColorWithValue || "#3aab1d",
@@ -21,17 +21,13 @@ const FullPin: React.FC<FullPinProps> = ({ pin, styles }) => {
     borderColor: styles?.input?.borderColorWithValue || "#3aab1d",
   };
 
-  useEffect(() => {
-    pin.onChange(code.toString());
-
-    if (code.length === pin.pinLength) {
-      pin.onCompleted(code.toString());
-    }
-  }, [code]);
+  if (code.length === pin.pinLength) {
+    pin.onCompleted(code.toString());
+  }
 
   const handleAddNumber = (number: number) => {
     if (code.length < pin.pinLength) {
-      setCode([...code, number]);
+      onChange([...code, number]);
     }
   };
 
@@ -39,7 +35,7 @@ const FullPin: React.FC<FullPinProps> = ({ pin, styles }) => {
     if (code.length > 0) {
       let newPin = code;
       newPin.pop();
-      setCode([...newPin]);
+      onChange([...newPin]);
     }
   };
 

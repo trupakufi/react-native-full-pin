@@ -19,18 +19,17 @@ Using yarn
 # Usage
 
 ```js
-import { FullPin } from "react-native-full-pin";
-
 export default function App() {
+  const [code, setCode] = useState([] as number[]);
   return (
-    <View>
+    <View style={styles.container}>
       <FullPin
         pin={{
+          code,
           pinLength: 4,
-          onChange: (e) => {
-            console.log("Change => ", e);
-          },
+          onChange: (e) => setCode(e),
           onCompleted: (e) => console.log("Completed => ", e),
+          okFunction: () => console.log("OK Function"),
         }}
         styles={{}}
       />
@@ -40,6 +39,7 @@ export default function App() {
 ```
 
 # Demo
+
 Without Styles.
 
 ![截屏_20220623_003859_2](https://user-images.githubusercontent.com/72455038/175178105-67445da3-906f-431d-884a-d63340d40fab.jpg)
@@ -47,7 +47,6 @@ Without Styles.
 With Styles
 
 ![截屏_20220623_004046_2](https://user-images.githubusercontent.com/72455038/175178217-9f74a53a-d4c6-4b28-a224-f6cc96aaa51b.jpg)
-
 
 # How to contribute
 
