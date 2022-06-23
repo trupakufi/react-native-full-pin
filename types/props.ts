@@ -36,8 +36,9 @@ interface Button {
 
 export interface FullPinProps {
   pin: {
+    code: number[];
     pinLength: 4 | 6 | 8;
-    onChange: (e: string) => void;
+    onChange: (e: number[]) => void;
     onCompleted: (e: string) => void;
     okFunction: () => void | undefined;
   };
