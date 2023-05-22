@@ -29,18 +29,13 @@ export interface InputWithValue {
   borderStyleWithValue?: string;
 }
 
-interface Button {
-  text?: string;
-  image?: URL | string;
-}
-
 export interface FullPinProps {
   pin: {
     code: number[];
     pinLength: 4 | 6 | 8;
-    onChange: (e: number[]) => void;
-    onCompleted: (e: string) => void;
-    okFunction: () => void | undefined;
+    onChange: (e: string) => void;
+    onCompleted?: (e: string) => void;
+    okFunction?: (e: string) => void | undefined;
   };
   styles?: {
     container?: {

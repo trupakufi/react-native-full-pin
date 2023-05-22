@@ -1,14 +1,11 @@
 {
   "name": "react-native-full-pin",
   "version": "1.0.2",
-  "description": "React Native Full Pin is a component To use Pin In your apps, with buttons, input, functions all in the same place.",
+  "description": "React Native Full Pin is a component to use Pin In your apps, with buttons, input, functions all in the same place.",
   "main": "index.tsx",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mariovarela99/react-native-pin.git"
+    "url": "git+https://github.com/mariovarela99/react-native-full-pin.git"
   },
   "keywords": [
     "React Native",
@@ -23,12 +20,13 @@
   "author": "mariovarela99",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mariovarela99/react-native-pin/issues"
+    "url": "https://github.com/mariovarela99/react-native-full-pin/issues"
   },
-  "homepage": "https://github.com/mariovarela99/react-native-pin#readme",
+  "homepage": "https://github.com/mariovarela99/react-native-full-pin#readme",
   "dependencies": {
     "react": "^18.2.0",
     "react-native": "^0.69.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "typescript": "^5.0.4"
   }
 }
