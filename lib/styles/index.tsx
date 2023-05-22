@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components/native";
-import { BasicElementStyles, TextStyle } from "../types/props";
+import { BasicElementStyles, TextStyle } from "../types";
 
 export const Container = styled.View`
   padding: 50px 40px 10px;

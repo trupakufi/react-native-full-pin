@@ -1,3 +1,4 @@
+import { BUTTON_TYPES } from "../../constants/buttonTypes";
 import { ButtonsType } from "./types";
 
 export const Buttons: ButtonsType[] = [
@@ -10,7 +11,7 @@ export const Buttons: ButtonsType[] = [
   { text: "7", value: 7 },
   { text: "8", value: 8 },
   { text: "9", value: 9 },
-  { text: "<", value: -1, type: "remove" },
+  { text: "<", value: -1, type: BUTTON_TYPES.REMOVE },
   { text: "0", value: 0 },
-  { text: "OK", value: -1, type: "OK" },
+  { text: "OK", value: -1, type: BUTTON_TYPES.OK },
 ];
