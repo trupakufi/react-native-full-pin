@@ -1,6 +1,6 @@
 {
   "name": "react-native-full-pin",
-  "version": "1.1",
+  "version": "1.1.0",
   "description": "React Native Full Pin is a component to use Pin In your apps, with buttons, input, functions all in the same place.",
   "main": "index.tsx",
   "repository": {
