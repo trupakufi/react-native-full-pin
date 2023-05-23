@@ -11,25 +11,24 @@ function FullPin({ pin, styles }: FullPinProps) {
   const { code, onChange, okFunction, onCompleted, pinLength } = pin;
 
   if (code.length === pin.pinLength) {
-    onCompleted?.(code.join());
+    onCompleted?.(code);
   }
 
   function addNumberToPin(number: number): void {
     if (code.length < pin.pinLength) {
-      onChange?.([...code, number].join());
+      onChange?.([...code, number].join(""));
     }
   }
 
   function removeNumberFromPin(): void {
     if (code.length > 0) {
-      let newPin = code;
-      newPin.pop();
-      onChange?.([...newPin].join());
+      let newPin = code.slice(0, code.length - 1);
+      onChange(newPin);
     }
   }
 
   function sendPin(): void {
-    okFunction?.(code.join());
+    okFunction?.(code);
   }
 
   function chooseButonFunction(button: ButtonsType): void {
