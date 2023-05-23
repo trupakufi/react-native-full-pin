@@ -31,7 +31,7 @@ export interface InputWithValue {
 
 export interface FullPinProps {
   pin: {
-    code: number[];
+    code: string;
     pinLength: 4 | 6 | 8;
     onChange: (e: string) => void;
     onCompleted?: (e: string) => void;

@@ -1,11 +1,12 @@
 import styled, { css } from "styled-components/native";
 import { BasicElementStyles, TextStyle } from "../types";
+import { AnyStyledComponent } from "styled-components";
 
-export const Container = styled.View`
+export const Container: AnyStyledComponent = styled.View`
   padding: 50px 40px 10px;
 `;
 
-export const ButtonsContainer = styled.View`
+export const ButtonsContainer: AnyStyledComponent = styled.View`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -14,7 +15,7 @@ export const ButtonsContainer = styled.View`
   width: 100%;
 `;
 
-export const Button = styled.Pressable`
+export const Button: AnyStyledComponent = styled.Pressable`
   margin: 6px 7px;
 
   display: flex;
@@ -33,7 +34,7 @@ export const Button = styled.Pressable`
   }}
 `;
 
-export const ButtonText = styled.Text`
+export const ButtonText: AnyStyledComponent = styled.Text`
   ${(props: TextStyle) => {
     return css`
       font-family: ${props.fontFamily || "sans-serif"};
@@ -47,7 +48,7 @@ export const ButtonText = styled.Text`
   }}
 `;
 
-export const InputArea = styled.View`
+export const InputArea: AnyStyledComponent = styled.View`
   width: 100%;
   display: flex;
   align-items: center;
@@ -56,7 +57,7 @@ export const InputArea = styled.View`
   margin: 50px auto 35px;
 `;
 
-export const InputNumber = styled.Text`
+export const InputNumber: AnyStyledComponent = styled.Text`
   margin: 3px 7px;
 
   ${(props: BasicElementStyles) => {
